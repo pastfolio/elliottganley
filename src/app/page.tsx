@@ -29,15 +29,17 @@ export default function Home() {
             </p>
 
             <p className="text-lg leading-relaxed text-neutral-700 mb-5">
-              Welcome to my website. Here you’ll find some of my writing on markets,
-              technology, and ideas that I find interesting and am currently following.
-              I use this space to think out loud — exploring how innovation, finance,
-              and global trends shape the future.
+              Welcome to my website. Here you’ll find some of my writing on
+              markets, technology, and ideas that I find interesting and am
+              currently following. I use this space to think out loud —
+              exploring how innovation, finance, and global trends shape the
+              future.
             </p>
 
             <p className="text-lg leading-relaxed text-neutral-700 mb-8">
-              I publish new essays every few weeks, reflecting on what I’m learning and
-              observing in the world of business, investing, and emerging technologies.
+              I publish new essays every few weeks, reflecting on what I’m
+              learning and observing in the world of business, investing, and
+              emerging technologies.
             </p>
 
             <Link
@@ -59,8 +61,8 @@ export default function Home() {
             <li key={post.slug}>
               <h3 className="text-xl font-semibold mb-1">{post.title}</h3>
               <p className="text-neutral-600 mb-2">
-  {post.description || "No description available."}
-</p>
+                {post.description || "No description available."}
+              </p>
               <Link
                 href={`/writings/${post.slug}`}
                 className="text-blue-600 hover:underline"
