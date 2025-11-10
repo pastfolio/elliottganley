@@ -58,7 +58,6 @@ export default function Home() {
           {posts.map((post) => (
             <li key={post.slug}>
               <h3 className="text-xl font-semibold mb-1">{post.title}</h3>
-              <p className="text-neutral-600 mb-2">{post.excerpt}</p>
               <Link
                 href={`/writings/${post.slug}`}
                 className="text-blue-600 hover:underline"
