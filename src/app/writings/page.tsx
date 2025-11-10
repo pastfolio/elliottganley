@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 
@@ -18,17 +17,6 @@ export default function WritingsPage() {
               key={post.slug}
               className="rounded-xl border border-neutral-200 shadow-sm hover:shadow-md transition overflow-hidden"
             >
-              {post.image && (
-                <div className="relative w-full h-56">
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              )}
-
               <div className="p-6">
                 <h2 className="text-2xl font-medium mb-2">{post.title}</h2>
                 <p className="text-sm text-neutral-500 mb-2">{post.date}</p>
