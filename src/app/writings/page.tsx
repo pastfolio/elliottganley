@@ -19,7 +19,13 @@ export default function WritingsPage() {
             >
               <div className="p-6">
                 <h2 className="text-2xl font-medium mb-2">{post.title}</h2>
-                <p className="text-sm text-neutral-500 mb-2">{post.date}</p>
+                <p className="text-sm text-neutral-500 mb-2">
+                  {new Date(post.date).toLocaleDateString("en-GB", {
+                    day: "numeric",
+                    month: "short",
+                    year: "numeric",
+                  })}
+                </p>
                 <p className="text-neutral-700 mb-3">
                   {post.description || "No description available."}
                 </p>
